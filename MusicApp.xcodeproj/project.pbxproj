@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4711F3F29A701210096DD5E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4711F3E29A701210096DD5E /* Queue.swift */; };
 		E4A964D6299FD9AE008B4288 /* MusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A964D5299FD9AE008B4288 /* MusicAppApp.swift */; };
 		E4A964D8299FD9AE008B4288 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A964D7299FD9AE008B4288 /* ContentView.swift */; };
 		E4A964DA299FD9B3008B4288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A964D9299FD9B3008B4288 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4711F3E29A701210096DD5E /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		E4A964D2299FD9AE008B4288 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A964D5299FD9AE008B4288 /* MusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppApp.swift; sourceTree = "<group>"; };
 		E4A964D7299FD9AE008B4288 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				E4A964D9299FD9B3008B4288 /* Assets.xcassets */,
 				E4A964DB299FD9B3008B4288 /* MusicApp.entitlements */,
 				E4A964DC299FD9B3008B4288 /* Preview Content */,
+				E4711F3E29A701210096DD5E /* Queue.swift */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				FA7F6672299FDB6500D375D1 /* Game.swift in Sources */,
 				FA7F6670299FDB5C00D375D1 /* Feedback.swift in Sources */,
 				E4A964D8299FD9AE008B4288 /* ContentView.swift in Sources */,
+				E4711F3F29A701210096DD5E /* Queue.swift in Sources */,
 				E4A964D6299FD9AE008B4288 /* MusicAppApp.swift in Sources */,
 				FA0C112129A6FD8F0049E104 /* SoundData.swift in Sources */,
 				FA7F666C299FDB3700D375D1 /* Menu.swift in Sources */,

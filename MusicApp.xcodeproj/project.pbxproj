@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E4711F3F29A701210096DD5E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4711F3E29A701210096DD5E /* Queue.swift */; };
+		E48858E929A828D500C34438 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48858E829A828D400C34438 /* HomePage.swift */; };
+		E48858EB29A8293E00C34438 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48858EA29A8293E00C34438 /* CustomTabBar.swift */; };
 		E4A964D6299FD9AE008B4288 /* MusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A964D5299FD9AE008B4288 /* MusicAppApp.swift */; };
 		E4A964D8299FD9AE008B4288 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A964D7299FD9AE008B4288 /* ContentView.swift */; };
 		E4A964DA299FD9B3008B4288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A964D9299FD9B3008B4288 /* Assets.xcassets */; };
 		E4A964DE299FD9B3008B4288 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A964DD299FD9B3008B4288 /* Preview Assets.xcassets */; };
+		E4B6B0B829A85EFE003CCFB8 /* Quicksand-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4B6B0B729A85EFE003CCFB8 /* Quicksand-VariableFont_wght.ttf */; };
 		FA0C111F29A6FB540049E104 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C111E29A6FB540049E104 /* Sound.swift */; };
 		FA0C112129A6FD8F0049E104 /* SoundData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0C112029A6FD8F0049E104 /* SoundData.swift */; };
 		FA7F6668299FDB1E00D375D1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6667299FDB1E00D375D1 /* Login.swift */; };
@@ -23,12 +26,16 @@
 
 /* Begin PBXFileReference section */
 		E4711F3E29A701210096DD5E /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		E48858E829A828D400C34438 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		E48858EA29A8293E00C34438 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		E4A964D2299FD9AE008B4288 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A964D5299FD9AE008B4288 /* MusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppApp.swift; sourceTree = "<group>"; };
 		E4A964D7299FD9AE008B4288 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4A964D9299FD9B3008B4288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4A964DB299FD9B3008B4288 /* MusicApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicApp.entitlements; sourceTree = "<group>"; };
 		E4A964DD299FD9B3008B4288 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4B6B0B729A85EFE003CCFB8 /* Quicksand-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E4B6B0B929A865DA003CCFB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FA0C111E29A6FB540049E104 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		FA0C112029A6FD8F0049E104 /* SoundData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundData.swift; sourceTree = "<group>"; };
 		FA7F6667299FDB1E00D375D1 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -76,6 +83,8 @@
 		E4A964D4299FD9AE008B4288 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				E4B6B0B929A865DA003CCFB8 /* Info.plist */,
+				E4B6B0B629A85EA6003CCFB8 /* Font */,
 				E42CAB1329A2DC6C004F5982 /* Login Tool */,
 				E4A964D5299FD9AE008B4288 /* MusicAppApp.swift */,
 				E4A964D7299FD9AE008B4288 /* ContentView.swift */,
@@ -87,6 +96,8 @@
 				E4A964DB299FD9B3008B4288 /* MusicApp.entitlements */,
 				E4A964DC299FD9B3008B4288 /* Preview Content */,
 				E4711F3E29A701210096DD5E /* Queue.swift */,
+				E48858E829A828D400C34438 /* HomePage.swift */,
+				E48858EA29A8293E00C34438 /* CustomTabBar.swift */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -97,6 +108,14 @@
 				E4A964DD299FD9B3008B4288 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4B6B0B629A85EA6003CCFB8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E4B6B0B729A85EFE003CCFB8 /* Quicksand-VariableFont_wght.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		FA0C111D29A6FB3B0049E104 /* GameFolder */ = {
@@ -168,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4A964DE299FD9B3008B4288 /* Preview Assets.xcassets in Resources */,
+				E4B6B0B829A85EFE003CCFB8 /* Quicksand-VariableFont_wght.ttf in Resources */,
 				E4A964DA299FD9B3008B4288 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,8 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7F666A299FDB2D00D375D1 /* Homescreen.swift in Sources */,
+				E48858E929A828D500C34438 /* HomePage.swift in Sources */,
 				FA7F6668299FDB1E00D375D1 /* Login.swift in Sources */,
 				FA7F6672299FDB6500D375D1 /* Game.swift in Sources */,
+				E48858EB29A8293E00C34438 /* CustomTabBar.swift in Sources */,
 				FA7F6670299FDB5C00D375D1 /* Feedback.swift in Sources */,
 				E4A964D8299FD9AE008B4288 /* ContentView.swift in Sources */,
 				E4711F3F29A701210096DD5E /* Queue.swift in Sources */,
@@ -317,6 +339,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -355,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MusicApp/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

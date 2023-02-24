@@ -25,71 +25,79 @@ struct Login: View {
 //        NavigationView {
             ZStack {
                 
-                Color("BrandLightGreen").opacity(0.35).edgesIgnoringSafeArea(.all)
+                //WHITE OR "WHITE"?
+                Color("BrandWhite").edgesIgnoringSafeArea(.all)
                 
                 VStack {
                     Spacer()
+//
+//                    Text("Music App").font(.custom("Quicksand-Bold", size: 30))
+//                        .padding(.bottom, 59)
                     
-                    Image("DummyLogo")
-                        .resizable().frame(width: 100, height:100)
-                        .padding()
+                    Circle()
+                        .frame(width: 200)
+                        .foregroundColor(Color("BrandPeach"))
+                    
+//                    Image("DummyLogo")
+//                        .resizable().frame(width: 100, height:100)
+//                        .padding()
                     
                     VStack(spacing: 15) {
-                        HStack(spacing: 15) {
-                            Image(systemName: "envelope")
-                                .foregroundColor(.black).frame(width: 15, height: 15)
+                        VStack(spacing: 8) {
+                            HStack {
+//                                Image(systemName: "envelope")
+//                                    .foregroundColor(.black).frame(width: 15, height: 15)
+                                Text("Email").font(.custom("Quicksand-Regular", size: 20))
+                                Spacer()
+                            }
                             
-                            TextField("Email", text: self.$email)
+                            TextField("", text: self.$email)
                                 .keyboardType(.emailAddress)
-                        }
-                        
-                        Divider()
-                        
-                        HStack(spacing: 15) {
-                            Image(systemName: "key")
-                                .foregroundColor(.black)
-                                .frame(width: 15, height: 15)
+                                .padding(20)
+                                .background(Color("BrandPeach"))
+                                .cornerRadius(10)
+                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                                .foregroundColor(Color("BrandBlack"))
                             
-                            SecureField("Password", text: self.$password)
-                        }
+                        }.padding(.bottom)
                         
-                        Divider()
+                 
+                        
+                        VStack(spacing: 8) {
+                            HStack {
+//                                Image(systemName: "key")
+//                                    .foregroundColor(.black).frame(width: 15, height: 15)
+                                Text("Password").font(.custom("Quicksand-Regular", size: 20))
+                                Spacer()
+                            }
+                            
+                            SecureField("", text: self.$password)
+                                .keyboardType(.emailAddress)
+                                .padding(20)
+                                .background(Color("BrandPeach"))
+                                .cornerRadius(10)
+                                .shadow(color: Color.black.opacity(0.08), radius: 60, x: 0.0, y: 16)
+                                .foregroundColor(Color("BrandBlack"))
+                        }
                         
                         if let mess = loginStatusMessage {
                             Text(mess).font(.footnote).foregroundColor(.red)
                         }
                         
                     }.padding()
-                        .padding(.vertical, screenHeight/20)
+                        .padding(.vertical, screenHeight/30)
                         .padding(.horizontal, 40)
-                    
-                    HStack {
-                        CheckBoxView(checked: $faceIdEnabled)
-                        Text("Turn on FaceId for future logins").font(.footnote).foregroundColor(.gray)
-                        
-                    }
-                    
-                    Button {
-                        
-                    } label: {
-                        Text("Forgot your password?")
-                            .font(.footnote)
-                            .padding(.all, 10)
-                            .padding(.bottom, 5)
-                            .foregroundColor(Color("BrandGreen"))
-                    }
-                    .padding(.bottom, screenHeight/10)
-                    
-//                    Spacer()
-//                    Spacer()
+                        .padding(.bottom, screenHeight/20)
+
                     
                     
-                    Text("SIGN IN")
+                    Text("Sign In")
+                        .font(.custom("Quicksand-SemiBold", size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.bold)
-                        .padding(.vertical)
+                        .padding(.vertical, 25)
                         .frame(width: UIScreen.main.bounds.width - 100)
-                        .background(Color("BrandGreen")).cornerRadius(8)
+                        .background(Color("BrandBlack")).cornerRadius(8)
                         .shadow(radius: 5)
                         .onTapGesture {
                             signInPressed()
@@ -98,14 +106,17 @@ struct Login: View {
                     //get rid of padding
                     
                     HStack(spacing: 5) {
-                        Text("Don't have an account?").font(.footnote).foregroundColor(.gray)
+                        Text("Don't have an account?")
+                            .font(.custom("Quicksand-Regular", size: 18))
+                            .foregroundColor(.gray)
                         
                         Button {
                             signUpPressed.toggle()
                         } label: {
                             Text("Sign up")
-                                .font(.footnote)
+                                .font(.custom("Quicksand-Regular", size: 18))
                                 .padding(.vertical)
+                            //CHANGE COLOR
                                 .foregroundColor(Color("BrandGreen"))
                         }
                         

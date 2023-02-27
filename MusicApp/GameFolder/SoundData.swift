@@ -8,3 +8,5 @@
 import Foundation
 
 // let soundList = []
+
+let easy1 = Sound(difficulty: .easy, soundFile: "Easy1")

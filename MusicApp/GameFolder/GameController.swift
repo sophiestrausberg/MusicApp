@@ -6,27 +6,43 @@
 //
 
 import Foundation
+import SwiftUI
 
-class GameController {
-    var soundQueue: Queue<Sound> = Queue()
+class GameController: ObservableObject {
     
-    init() {
+    var soundQueue: Queue<Sound> = Queue()
+    @State private var timerLength: Int
+    
+
+    
+    init(_ timerLength: Int) {
         for (_, value) in allSounds {
-            var index = Int.random(in: 0...value.count-1)
+            let index = Int.random(in: 0...value.count-1)
             soundQueue.enqueue(value[index])
         }
         
+        self.timerLength = timerLength
+        //_timerLength = State(initialValue: timerLength)
+
         print(soundQueue)
+        
+        runGame()
     }
     
-//    func enqueueSounds() {
-//        for (_, value) in allSounds {
-//            var index = Int.random(in: 0...value.count-1)
-//            soundQueue.enqueue(value[index])
-//        }
-//    }
     
     func runGame() {
+        
+        var timeLimit = false
+        
+        let timer2 = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { timer in
+            timeLimit = true
+            print("DONEEE!!!!")
+            print(timeLimit)
+        }
+
+        while !timeLimit {
+            print(timeLimit)
+        }
         
     }
 }

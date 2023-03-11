@@ -11,6 +11,7 @@ import AVKit
 
 struct Game: View {
     @State var audioPlayer: AVAudioPlayer!
+    @StateObject var GameCont = GameController(5)
     
     var body: some View {
         ZStack {
